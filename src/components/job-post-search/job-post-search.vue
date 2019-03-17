@@ -1,10 +1,11 @@
 <template src="job-post-search.html"></template>
 
+<style></style>
 <script>
 import eachPost from './each-post';
 
 export default {
-  name: 'JobPosts',
+  name: 'JobPostSearch',
   components: {
     eachPost,
   },
