@@ -3,7 +3,7 @@ import Contact from '@/components/contact/contact';
 import Recommended from '@/components/recommended/recommended';
 import Vue from 'vue';
 import Router from 'vue-router';
-import RecentPublications from '@/components/recent-publications';
+import recent-publication from '@/components/recent-publications';
 
 
 Vue.use(Router);
@@ -23,7 +23,7 @@ component: Contact,
 },
 { path:'/',
 name: 'home',
-component: Recent_Publications,
+component: recent-publication,
 }
 ],
 });
