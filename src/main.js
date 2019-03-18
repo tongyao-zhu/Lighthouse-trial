@@ -1,13 +1,18 @@
 import Vue from 'vue';
+import Vuetify from 'vuetify';
 import BootstrapVue from 'bootstrap-vue';
+import 'vuetify/dist/vuetify.min.css';
 import App from './app/app';
 import router from './app/router/router';
+import HighchartsVue from 'highcharts-vue';
+
 import './styles/main.scss';
-import 'vuetify/dist/vuetify.min.css'
 
 Vue.config.productionTip = process.env.NODE_ENV === 'production';
 
 Vue.use(BootstrapVue);
+Vue.use(Vuetify);
+Vue.use(HighchartsVue);
 
 /* eslint-disable no-new */
 new Vue({
