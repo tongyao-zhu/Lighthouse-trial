@@ -1,57 +1,26 @@
 <div>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <div>
+    <i class="fas fa-project-diagram project-icon"></i>
+    <b-link v-b-modal="project.title" class='project-clickable-title'>{{project.title}}</b-link>
+    <!-- Modal Component -->
+    <b-modal v-bind:id="project.title" title="Project Details" size="lg" ok-only ok-title="Back">
+      <b class='project-modal-title'> {{project.title}} </b><br><br>
+      <b> Description:</b><br />
+      <p> {{project.description}}</p>
+      <b> Requirements:</b><br />
+      <ul>
+        <li  v-for="requirement in project.requirements">
+         {{requirement}}
+        </li>
+      </ul>
+      <b> Period: </b><br />
+      <p> {{project.period}} </p>
+      <b> Contact Details:</b><br />
+      <p>{{project.person}} : <a :href="`mailto:${project.contact}`">{{project.contact}}</a> </p>
+    </b-modal>
   </div>
-</div>
+  <hr class='separation-line'>
+  </hr>
 </div>
 
-  <!-- Large modal -->
-  <!--
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          ...
-        </div>
-      </div>
-    </div>
-   
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          ...
-        </div>
-      </div>
-    </div>
--->
-</div>
-</div>
