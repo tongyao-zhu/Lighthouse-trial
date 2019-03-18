@@ -1,6 +1,6 @@
 <div>
-	<div class='opening-positions-header'> Opening Positions </div>
-  <div v-for="title in positions">
-    <eachPosition v-bind:title=title></eachPosition>
+	<div class="opening-positions-header"> Opening Positions </div>
+  <div class="position-frame">
+    <eachPosition v-for="title in positions" v-bind:title=title class="card"></eachPosition>
   </div>
 </div>

@@ -1,10 +1,22 @@
-.opening-postions-header{
-	font-size:40px;
-	background-color:rgb(244,237,228);
-	color:rgb(62,152,204);
+.opening-positions-header {
+	font-size: 30px;
+	background-color: rgb(244,237,228);
+	color: rgb(62,152,204);
+	margin-bottom: 10px;
 }
 
-.position-icon{
-  width:36px;
-  height:36px;
+.position-frame {
+	display: flex;
+  flex-direction: row;
+}
+
+.card {
+	font-size: 12px;
+	margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button-on-card {
+	margin-top: 10px;
+	font-size: 12px;
 }
