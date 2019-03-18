@@ -2,9 +2,11 @@ import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
 import Home from '@/components/home/home';
 import Vue from 'vue';
+import Vuetify from 'vuetify';
 import Router from 'vue-router';
 
 Vue.use(Router);
+Vue.use(Vuetify);
 
 export default new Router({
   mode: 'history',

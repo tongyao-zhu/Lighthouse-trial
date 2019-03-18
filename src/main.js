@@ -3,6 +3,7 @@ import BootstrapVue from 'bootstrap-vue';
 import App from './app/app';
 import router from './app/router/router';
 import './styles/main.scss';
+import 'vuetify/dist/vuetify.min.css'
 
 Vue.config.productionTip = process.env.NODE_ENV === 'production';
 
