@@ -13,16 +13,18 @@ const db = firebase
 export default {
   name: 'SearchBar',
   props: {
-    subtitle: {
+    sub_title: {
       default: 'Search for Company',
     },
-    tablename: {
+    table_name: {
       default: 'company',
+    },
+    name_field: {
+      default: 'company_name',
     },
   },
   data() {
     return {
-      check: this.charts,
       input: null,
       colors: [
         'teal',
@@ -30,30 +32,47 @@ export default {
         'brown',
         'blue',
       ],
-      data: [
-        {
-          company_id: '1',
-          name: 'Google',
-          image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png',
-        },
-        {
-          company_id: '2',
-          name: 'Amazon',
-        },
-        {
-          company_id: '3',
-          name: 'Facebook',
-        },
-        {
-          company_id: '4',
-          name: 'DRW',
-        },
-      ],
+      // data: [
+      //   {
+      //     item_id: '1',
+      //     name: 'Google',
+      //     image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png',
+      //   },
+      //   {
+      //     item_id: '2',
+      //     name: 'Amazon',
+      //   },
+      //   {
+      //     item_id: '3',
+      //     name: 'Facebook',
+      //   },
+      //   {
+      //     item_id: '4',
+      //     name: 'DRW',
+      //   },
+      // ],
     };
   },
+  computed: {
+    data() {
+      const results = [];
+      for (const item_id in this.data_dict) {
+        if (typeof this.data_dict[item_id] !== 'object') continue;
+        const results_item = {
+          item_id,
+          name: this.data_dict[item_id][this.name_field],
+        };
+        if ('image_url' in this.data_dict[item_id]) {
+          results_item.image_url = this.data_dict[item_id].image_url;
+        }
+        results.push(results_item);
+      }
+      return results;
+    },
+  },
   firebase: {
-    charts: {
-      source: db.ref('charts'),
+    data_dict: {
+      source: db.ref('company'),
       asObject: true,
     },
   },
