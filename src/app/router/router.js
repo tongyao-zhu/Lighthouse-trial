@@ -1,9 +1,9 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
-import Recommended from '@/components/recommended/recommended';
 import Vue from 'vue';
 import Router from 'vue-router';
 import RecentPublications from '@/components/recent-publications/recent-publications';
+import JobPostSearch from '@/components/job-post-search/job-post-search';
 
 Vue.use(Router);
 
@@ -26,5 +26,10 @@ export default new Router({
       name: 'home',
       component: RecentPublications,
     },
+    {
+      path: '/jobPostSearch',
+      name: 'jobPostSearch',
+      component: JobPostSearch,
+    }
   ],
 });
