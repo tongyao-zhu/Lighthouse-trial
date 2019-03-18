@@ -1,11 +1,12 @@
 <template src="./search-bar.html"></template>
 <style src="./search-bar.scss" lang="scss"></style>
-<script>
-import firebase from "firebase";
 
-let db = firebase
+<script>
+import firebase from 'firebase';
+
+const db = firebase
   .initializeApp({
-    databaseURL: "https://bt3103-lighthouse.firebaseio.com/"
+    databaseURL: 'https://bt3103-lighthouse.firebaseio.com/',
   })
   .database();
 
@@ -21,6 +22,7 @@ export default {
   },
   data() {
     return {
+      check: this.charts,
       input: null,
       colors: [
         'teal',
@@ -48,6 +50,12 @@ export default {
         },
       ],
     };
+  },
+  firebase: {
+    charts: {
+      source: db.ref('charts'),
+      asObject: true,
+    },
   },
 };
 </script>
