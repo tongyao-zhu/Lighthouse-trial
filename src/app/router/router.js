@@ -1,7 +1,6 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
-import Home from '@/components/home/home';
-import Recommended from '@/components/recommended/recommended';
+import IndustryExplorer from '@/components/industry-explorer/industry-explorer';
 import Vue from 'vue';
 import Router from 'vue-router';
 
@@ -13,7 +12,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Recommended,
+      component: IndustryExplorer,
     },
     {
       path: '/about',
