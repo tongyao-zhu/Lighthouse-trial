@@ -1,1 +1,1 @@
-# NUS Lighthouse
+NUS lighthouse
