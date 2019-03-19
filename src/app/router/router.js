@@ -6,6 +6,7 @@ import Router from 'vue-router';
 import RecentPublications from '@/components/recent-publications/recent-publications';
 import JobPostSearch from '@/components/job-post-search/job-post-search';
 import Modal from '@/components/modal/modal';
+import CurrentProjects from '@/components/current-projects/current-projects';
 
 
 Vue.use(Router);
@@ -16,7 +17,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: SearchBar,
+      component: CurrentProjects,
     },
     {
       path: '/about',
