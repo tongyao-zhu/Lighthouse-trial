@@ -1,5 +1,6 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
+import SearchBar from '@/components/search-bar/search-bar';
 import Vue from 'vue';
 import Router from 'vue-router';
 import RecentPublications from '@/components/recent-publications/recent-publications';
@@ -12,7 +13,11 @@ Vue.use(Router);
 export default new Router({
   mode: 'history',
   routes: [
-
+    {
+      path: '/',
+      name: 'home',
+      component: SearchBar,
+    },
     {
       path: '/about',
       name: 'about',
@@ -22,11 +27,6 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact,
-    },
-    {
-      path: '/',
-      name: 'home',
-      component: RecentPublications,
     },
     {
       path: '/jobPostSearch',
