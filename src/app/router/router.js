@@ -1,6 +1,6 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
-import OpeningPositions from '@/components/opening-positions/opening-positions';
+import Chart from '@/components/ra-main-charts/ra-main-charts';
 import Vue from 'vue';
 import Router from 'vue-router';
 
@@ -12,7 +12,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: OpeningPositions,
+      component: Chart,
     },
     {
       path: '/about',

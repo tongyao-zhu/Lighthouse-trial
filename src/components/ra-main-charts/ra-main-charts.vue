@@ -2,14 +2,18 @@
 <style src="./ra-main-charts.scss" lang="scss"></style>
 
 <script>
-import BarChart from '@/components/ra-main-bar-chart/ra-main-bar-chart'
-import HighchartsVue from 'highcharts-vue';
-import Highcharts from "highcharts";
+import BarChartNum from '@/components/ra-main-charts/bar-chart-num';
+import BarChartAccp from '@/components/ra-main-charts/bar-chart-accp';
+import BoxPlot from '@/components/ra-main-charts/box-plot';
+import AreaChart from '@/components/ra-main-charts/area-chart';
 
 export default {
-  name: 'OpeningPositions',
+  name: 'MainChart',
   components: {
-    BarChart,
+    BarChartNum,
+    BarChartAccp,
+    BoxPlot,
+    AreaChart,
   },
 };
 
