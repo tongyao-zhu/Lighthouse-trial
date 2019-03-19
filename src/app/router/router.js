@@ -6,7 +6,7 @@ import Home from '@/components/home/home';
 // import Company from '@/components/company/company';
 // import Header from '@/components/header/header';
 // import Pie from '@/components/charts/pie.vue';
-// import Line from '@/components/charts/line';
+import Line from '@/components/charts/line.vue';
 // import Bar from '@/components/charts/bar.vue';
 // import Wordcloud from '@/components/charts/word-cloud.vue';
 // import Area from '@/components/charts/area.vue';
@@ -17,7 +17,7 @@ import RecentPublications from '@/components/recent-publications/recent-publicat
 import JobPostSearch from '@/components/job-post-search/job-post-search';
 import Modal from '@/components/modal/modal';
 import CurrentProjects from '@/components/current-projects/current-projects';
-
+import TrejectoryPosition from '@/components/trajectory-position/trajectory-position';
 
 Vue.use(Router);
 
@@ -32,7 +32,7 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: About,
+      component: TrejectoryPosition,
     },
     {
       path: '/contact',
