@@ -34,6 +34,10 @@ export default new Router({
       name: 'jobPostSearch',
       component: JobPostSearch,
     },
-
+    {
+      path: '/searchBar',
+      name: 'searchBar',
+      component: SearchBar,
+    },
   ],
 });
