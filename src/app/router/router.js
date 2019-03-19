@@ -33,10 +33,6 @@ export default new Router({
       name: 'jobPostSearch',
       component: JobPostSearch,
     },
-    {
-      path:'/Modal',
-      name:'Modal',
-      component: Modal,
-    },
+
   ],
 });
