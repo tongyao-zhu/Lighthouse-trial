@@ -1,7 +1,6 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
-import Home from '@/components/home/home';
-import Recommended from '@/components/recommended/recommended';
+import Recommended from '@/components/industry-insight/line-salary-dist';
 import Vue from 'vue';
 import Router from 'vue-router';
 
