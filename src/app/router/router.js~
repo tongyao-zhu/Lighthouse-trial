@@ -27,8 +27,8 @@ export default new Router({
       component: RecentPublications,
     },
     {
-      path: '/jobPostSearch',
-      name: 'jobPostSearch',
+      path: '/jobPostings',
+      name: 'jobPosting',
       component: JobPostSearch,
     }
   ],
