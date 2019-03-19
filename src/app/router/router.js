@@ -5,7 +5,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import RecentPublications from '@/components/recent-publications/recent-publications';
 import JobPostSearch from '@/components/job-post-search/job-post-search';
-import Modal from '@components/modal/modal';
+import Modal from '@/components/modal/modal';
 
 
 Vue.use(Router);
