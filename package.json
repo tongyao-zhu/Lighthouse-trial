@@ -19,10 +19,7 @@
     "font-awesome": "^4.7.0",
     "highcharts": "^7.0.3",
     "highcharts-vue": "^1.2.0",
-<<<<<<< HEAD
-=======
     "material-design-icons-iconfont": "^4.0.5",
->>>>>>> c01b5d12852c9883ef1f7dd2aeb2c946215167b8
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuefire": "^1.4.5",

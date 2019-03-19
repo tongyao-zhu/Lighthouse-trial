@@ -15,7 +15,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import RecentPublications from '@/components/recent-publications/recent-publications';
 import JobPostSearch from '@/components/job-post-search/job-post-search';
-import Modal from '@components/modal/modal';
+import Modal from '@/components/modal/modal';
 
 
 Vue.use(Router);
@@ -23,15 +23,6 @@ Vue.use(Router);
 export default new Router({
   mode: 'history',
   routes: [
-<<<<<<< HEAD
-    {
-      path: '/',
-      name: 'home',
-      component: RecentPublications,
-    },
-    
-    {
-=======
     {
       path: '/',
       name: 'home',
@@ -48,7 +39,6 @@ export default new Router({
       component: Contact,
     },
     {
->>>>>>> c01b5d12852c9883ef1f7dd2aeb2c946215167b8
       path: '/jobPostSearch',
       name: 'jobPostSearch',
       component: JobPostSearch,

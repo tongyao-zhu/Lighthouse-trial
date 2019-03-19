@@ -1,15 +1,15 @@
 <template>
   <div style='background-color:rgb(227,234,245)'>
-    <img v-bind:src="position.logo_url" v-bind:alt="position.position_name"
+    <img :src="position.logo_url" :alt="position.position_name"
     align="left"
-    style='height:110px;width:110px'
+    style='height:70px;width:70px'
     v-bind:title="position.position_name">
-    <b style='font-size:150%'>
+    <b style='font-size:100%'>
       {{position.position_name}}</b>
     <br />
     <p style='color:rgb(118,113,113)'>
       {{position.position_location}}</p>
-    <p style='font-size:120%;color:rgb(118,113,113)'>
+    <p style='font-size:80%;color:rgb(118,113,113)'>
       {{position.company_name}}</p>
   </div>
 </template>
