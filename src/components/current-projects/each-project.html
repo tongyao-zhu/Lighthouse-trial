@@ -1,0 +1,26 @@
+<div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <div>
+    <i class="fas fa-project-diagram project-icon"></i>
+    <b-link v-b-modal="project.title" class='project-clickable-title'>{{project.title}}</b-link>
+    <!-- Modal Component -->
+    <b-modal v-bind:id="project.title" title="Project Details" size="lg" ok-only ok-title="Back">
+      <b class='project-modal-title'> {{project.title}} </b><br><br>
+      <b> Description:</b><br />
+      <p> {{project.description}}</p>
+      <b> Requirements:</b><br />
+      <ul>
+        <li  v-for="requirement in project.requirements">
+         {{requirement}}
+        </li>
+      </ul>
+      <b> Period: </b><br />
+      <p> {{project.period}} </p>
+      <b> Contact Details:</b><br />
+      <p>{{project.person}} : <a :href="`mailto:${project.contact}`">{{project.contact}}</a> </p>
+    </b-modal>
+  </div>
+  <hr class='separation-line'>
+  </hr>
+</div>
+

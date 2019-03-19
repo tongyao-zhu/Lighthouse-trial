@@ -1,10 +1,12 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
-import Home from '@/components/home/home';
+import SearchBar from '@/components/search-bar/search-bar';
 import Vue from 'vue';
 import Router from 'vue-router';
 import RecentPublications from '@/components/recent-publications/recent-publications';
 import JobPostSearch from '@/components/job-post-search/job-post-search';
+import Modal from '@components/modal/modal';
+
 
 Vue.use(Router);
 
@@ -14,7 +16,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      component: SearchBar,
     },
     {
       path: '/about',
@@ -31,5 +33,6 @@ export default new Router({
       name: 'jobPostSearch',
       component: JobPostSearch,
     },
+
   ],
 });
