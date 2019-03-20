@@ -2,42 +2,65 @@
   <highcharts :options="options" ref="line-chart" class="line"></highcharts>
 </template>
 
+
+<style scoped>
+.line{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  width: 100%;
+}
+</style>
+
+
 <script>
 import HighchartsVue from 'highcharts-vue';
 
-
 const data = {
-  chart: {
-    type: 'line',
-  },
   title: {
-    text: 'Number of interns',
+    text: 'Opening Positions',
   },
-
   subtitle: {
-    text: 'Source: NUS data lake',
-  },
-  xAxis: {
-    categories: ['2014', '2015', '2016', '2017', '2018'],
+    text: 'Source: NUS Datalake',
   },
   yAxis: {
     title: {
-      text: 'Number of Interns',
+      text: 'Number of positions',
     },
   },
+  legend: {
+    layout: 'vertical',
+    align: 'right',
+    verticalAlign: 'middle',
+  },
   plotOptions: {
-    line: {
-      dataLabels: {
-        enabled: true,
+    series: {
+      label: {
+        connectorAllowed: false,
       },
-      enableMouseTracking: false,
+      pointStart: 2012,
     },
   },
   series: [{
-    name: 'Number',
-    data: [20, 30, 40, 10, 5],
+    name: 'Positions',
+    data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175],
   }],
+  responsive: {
+    rules: [{
+      condition: {
+        maxWidth: 500,
+      },
+      chartOptions: {
+        legend: {
+          layout: 'horizontal',
+          align: 'center',
+          verticalAlign: 'bottom',
+        },
+      },
+    }],
+  },
 };
+
 
 export default {
   components: {
@@ -50,12 +73,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.line{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-</style>
