@@ -7,10 +7,12 @@
 	display: table;
 	clear: both;
 	content: '';
+	text-align: center;
 }
 
 .charts-item{
 	width: 50%;
 	float: left;
-	padding: 2rem;
+	margin: 2rem;
+	padding: 4rem;
 }
