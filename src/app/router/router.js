@@ -1,6 +1,6 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
-import Chart from '@/components/ra-main-charts/ra-main-charts';
+import RAChart from '@/components/ra-main-charts/ra-main-charts';
 
 // import About from '@/components/about/about';
 // import Contact from '@/components/contact/contact';
@@ -35,12 +35,22 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Chart,
+      component: null,
+    },
+    {
+      path: '/current-projects',
+      name: 'current-projects',
+      component: CurrentProjects,
     },
     {
       path: '/about',
       name: 'about',
       component: About,
+    },
+    {
+      path: '/ra-charts',
+      name: 'ra-charts',
+      component: RAChart,
     },
     {
       path: '/position-stats',
@@ -56,6 +66,11 @@ export default new Router({
       path: '/JobPostSearch',
       name: 'JobPostSearch',
       component: JobPostSearch,
+    },
+    {
+      path: '/trjectory',
+      name: 'trajectory',
+      component: TrejectoryPosition,
     },
     {
 
