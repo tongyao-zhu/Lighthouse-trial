@@ -6,7 +6,8 @@ import RAChart from '@/components/ra-main-charts/ra-main-charts';
 // import Contact from '@/components/contact/contact';
 import Home from '@/components/home/home';
 import Company from '@/components/company/company';
-// import Header from '@/components/header/header';
+import Header from '@/components/header/header';
+import Subheader from '@/components/subheader/subheader';
 // import Pie from '@/components/charts/pie';
 import Lines from '@/components/charts/line';
 // import Bar from '@/components/charts/bar';
@@ -121,6 +122,22 @@ export default new Router({
       path: '/positionDetails',
       name: 'positionDetails',
       component: PositionDetails,
+    },
+    {
+      path: '/header',
+      name: 'header',
+      component: Header,
+      props: {
+        username: 'Anonymous',
+      },
+    },
+    {
+      path: '/subheader',
+      name: 'subheader',
+      component: Subheader,
+      props: {
+        field: 'Internship Opportunities',
+      },
     },
   ],
 });
