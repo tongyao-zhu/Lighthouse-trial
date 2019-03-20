@@ -17,6 +17,7 @@ import RecentPublications from '@/components/recent-publications/recent-publicat
 import JobPostSearch from '@/components/job-post-search/job-post-search';
 import Modal from '@/components/modal/modal';
 import CurrentProjects from '@/components/current-projects/current-projects';
+import BasicInformation from '@/components/basic-information/basic-information';
 import TrejectoryPosition from '@/components/trajectory-position/trajectory-position';
 
 Vue.use(Router);
@@ -24,6 +25,7 @@ Vue.use(Router);
 export default new Router({
   mode: 'history',
   routes: [
+
     {
       path: '/',
       name: 'home',
@@ -40,9 +42,39 @@ export default new Router({
       component: Contact,
     },
     {
-      path: '/jobPostSearch',
-      name: 'jobPostSearch',
+      path: '/JobPostSearch',
+      name: 'JobPostSearch',
       component: JobPostSearch,
+    },
+    {
+
+      path: '/RecentPublications',
+      name: 'RecentPublications',
+      component: RecentPublications,
+    },
+    {
+      path: '/BasicInformationInternship',
+      name: 'BasicInformationInternship',
+      component: BasicInformation,
+      props: {
+        section: 'Internship',
+      },
+    },
+    {
+      path: '/BasicInformationResearch',
+      name: 'BasicInformationResearch',
+      component: BasicInformation,
+      props: {
+        section: 'Research',
+      },
+    },
+    {
+      path: '/BasicInformationTeaching',
+      name: 'BasicInformationTeaching',
+      component: BasicInformation,
+      props: {
+        section: 'Teaching',
+      },
     },
     {
       path: '/searchBar',
