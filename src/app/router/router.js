@@ -1,5 +1,7 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
+import Chart from '@/components/ra-main-charts/ra-main-charts';
+
 // import About from '@/components/about/about';
 // import Contact from '@/components/contact/contact';
 import Home from '@/components/home/home';
@@ -32,7 +34,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: IndustryExplorer,
+      component: Chart,
     },
     {
       path: '/about',
