@@ -1,11 +1,31 @@
 <div>
 	<h3 class ='title'> Total number of interns: {{number}}</h3>
 	<div class = 'charts-container'>
-		<Pie class = 'charts-item'></Pie>
-		<Pie class = 'charts-item'></Pie>
-		<Pie class = 'charts-item'></Pie>
-		<Lines class= 'charts-item'></Lines>
-		<Wordcloud class = 'charts-item'></Wordcloud>
-		<Wordcloud class = 'charts-item'></Wordcloud>
+		<b-row class = 'row'>
+			<b-col class = 'col'>
+				<Pie></Pie>
+			</b-col>
+			<b-col class = 'col'>
+				<Pie></Pie>
+			</b-col>
+		</b-row>
+
+		<b-row class = 'row'>
+			<b-col class = 'col'>
+				<Pie></Pie>
+			</b-col>
+			<b-col class = 'col'>
+				<Lines></Lines>
+			</b-col>
+		</b-row>
+
+		<b-row class = 'row'>
+			<b-col class = 'col'>
+				<Wordcloud></Wordcloud>
+			</b-col>
+			<b-col class = 'col'>
+				<Wordcloud></Wordcloud>
+			</b-col>
+		</b-row>
 	</div>
 </div>

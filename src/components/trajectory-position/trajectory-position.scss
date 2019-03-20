@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.charts-container:after{
+/*.charts-container:after{
 	display: table;
 	clear: both;
 	content: '';
@@ -14,6 +14,11 @@
 	margin: 1rem 2rem;
 	padding: 2rem 5rem;
 	text-align: center;
+}*/
+
+.col {
+	margin: 2rem;
+	padding: 2rem;
 }
 
  .title{
