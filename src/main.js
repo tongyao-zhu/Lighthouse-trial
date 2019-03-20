@@ -4,7 +4,6 @@ import Vuetify from 'vuetify';
 import VueFire from 'vuefire';
 import BootstrapVue from 'bootstrap-vue';
 
-import HighchartsVue from 'highcharts-vue';
 import Highcharts from 'highcharts';
 import exportingInit from 'highcharts/modules/exporting';
 import 'vuetify/dist/vuetify.min.css';
