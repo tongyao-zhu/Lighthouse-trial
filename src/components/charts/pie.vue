@@ -4,7 +4,6 @@
 
 <script>
 import HighchartsVue from 'highcharts-vue';
-import Highcharts from 'highcharts';
 
 
 const data = {

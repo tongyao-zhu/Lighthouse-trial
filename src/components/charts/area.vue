@@ -5,7 +5,6 @@
 <script>
 import HighchartsVue from 'highcharts-vue';
 
-
 const data = {
   chart: {
     type: 'area',
