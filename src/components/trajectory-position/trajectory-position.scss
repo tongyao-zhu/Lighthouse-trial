@@ -2,17 +2,22 @@
   box-sizing: border-box;
 }
 
-
 .charts-container:after{
 	display: table;
 	clear: both;
 	content: '';
-	text-align: center;
 }
 
 .charts-item{
 	width: 50%;
 	float: left;
-	margin: 2rem;
-	padding: 4rem;
+	margin: 1rem 2rem;
+	padding: 2rem 5rem;
+	text-align: center;
+}
+
+ .title{
+	text-align: left;
+	margin-left: 2rem;
+	margin-top: 1rem;
 }
