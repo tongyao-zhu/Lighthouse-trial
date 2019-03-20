@@ -65,7 +65,7 @@ const data = {
     data: [
       5, 7, 10, 9, 12,
     ],
-  },{
+  }, {
     name: 'Civil Engineering',
     data: [
       4, 7, 4, 5, 8,
@@ -95,7 +95,7 @@ const data = {
     data: [
       3, 1, 4, 6, 7,
     ],
-  },{
+  }, {
     name: 'Business Analytics',
     data: [
       1, 0, 2, 2, 3,
