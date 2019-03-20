@@ -40,7 +40,7 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: TrejectoryPosition,
+      component: About,
     },
     {
       path: '/position-stats',
