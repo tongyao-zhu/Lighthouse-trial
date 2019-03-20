@@ -19,4 +19,22 @@
       </template>
     </template>
   </v-autocomplete>
+  <b-row>
+    <b-col>
+      <h6 class="text-muted">Filter by Industry</h6>
+      <v-autocomplete
+        v-model="filter_a_value"
+        :items="filter_a_values"
+      >
+      </v-autocomplete>
+    </b-col>
+    <b-col>
+      <h6 class="text-muted">Filter by Major</h6>
+      <v-autocomplete
+        v-model="filter_b_value"
+        :items="filter_b_values"
+      >
+      </v-autocomplete>
+  </b-col>
+  </b-row>
 </b-card>
