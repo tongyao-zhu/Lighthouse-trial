@@ -36,6 +36,7 @@ export default new Router({
       component: JobPostSearch,
     },
     {
+
       path: '/RecentPublications',
       name: 'RecentPublications',
       component: RecentPublications,
@@ -63,6 +64,11 @@ export default new Router({
       props: {
         section: 'Teaching',
       },
+    },
+    {
+      path: '/searchBar',
+      name: 'searchBar',
+      component: SearchBar,
     },
   ],
 });
