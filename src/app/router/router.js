@@ -7,6 +7,7 @@ import RecentPublications from '@/components/recent-publications/recent-publicat
 import JobPostSearch from '@/components/job-post-search/job-post-search';
 import Modal from '@/components/modal/modal';
 import CurrentProjects from '@/components/current-projects/current-projects';
+import FilteredSearch from '@/components/filtered-search/filtered-search';
 
 
 Vue.use(Router);
@@ -38,6 +39,11 @@ export default new Router({
       path: '/searchBar',
       name: 'searchBar',
       component: SearchBar,
+    },
+    {
+      path: '/filteredSearch',
+      name: 'filteredSearch',
+      component: FilteredSearch,
     },
   ],
 });
