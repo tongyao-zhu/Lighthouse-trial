@@ -5,7 +5,7 @@ import RAChart from '@/components/ra-main-charts/ra-main-charts';
 // import About from '@/components/about/about';
 // import Contact from '@/components/contact/contact';
 import Home from '@/components/home/home';
-// import Company from '@/components/company/company';
+import Company from '@/components/company/company';
 // import Header from '@/components/header/header';
 // import Pie from '@/components/charts/pie';
 import Lines from '@/components/charts/line';
@@ -101,6 +101,11 @@ export default new Router({
       props: {
         section: 'Teaching',
       },
+    },
+    {
+      path: '/company-description',
+      name: 'company-description',
+      component: Company,
     },
     {
       path: '/searchBar',
