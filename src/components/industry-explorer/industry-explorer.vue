@@ -1,5 +1,5 @@
-<template src="./position-details.html"></template>
-<style src="./position-details.scss" lang="scss"></style>
+<template src="./industry-explorer.html"></template>
+<style src="./industry-explorer.scss" lang="scss"></style>
 
 <script>
 import BarChart from '@/components/charts/bar';
