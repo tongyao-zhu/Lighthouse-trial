@@ -2,11 +2,13 @@
   <highcharts :options="options" ref="line-chart" class="line"></highcharts>
 </template>
 
+
 <style scoped>
 .line{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  width: 100%;
 }
 </style>
 
@@ -71,5 +73,3 @@ export default {
   },
 };
 </script>
-
-
