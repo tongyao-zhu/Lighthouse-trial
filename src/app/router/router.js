@@ -1,6 +1,6 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
-import Recommended from '@/components/industry-insight/line-salary-dist';
+import Recommended from '@/components/background-statistics/background-statistics';
 import Vue from 'vue';
 import Router from 'vue-router';
 
