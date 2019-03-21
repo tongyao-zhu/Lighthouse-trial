@@ -4,7 +4,7 @@
 
 <script>
 import HighchartsVue from 'highcharts-vue';
-import Highcharts from 'highcharts';
+// import Highcharts from 'highcharts';
 
 
 const data = {
@@ -59,9 +59,9 @@ export default {
 
 <style scoped>
 .line{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 </style>

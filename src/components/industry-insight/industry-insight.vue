@@ -1,5 +1,5 @@
 <template src="./industry-insight.html"></template>
-<!-- <script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script> -->
+<style src="./industry-insight.scss" lang="scss"></style>
 
 <script>
 import PieChartGender from '@/components/industry-insight/pie-chart-gender';
@@ -8,7 +8,7 @@ import PieChartYear from '@/components/industry-insight/pie-chart-year';
 import LineChartNum from '@/components/industry-insight/line-chart-num';
 import BarChartNa from '@/components/industry-insight/bar-chart-nationality';
 import LineChartSalary from '@/components/industry-insight/line-chart-salary';
-// import LineSalaryDist from '@/components/industry-insight/line-salary-dist';
+import HistogramSalary from '@/components/industry-insight/histogram-salary';
 
 export default {
   name: 'MainChart',
@@ -19,6 +19,12 @@ export default {
     LineChartNum,
     BarChartNa,
     LineChartSalary,
+    HistogramSalary,
+  },
+  data() {
+    return {
+      totalNum: 552,
+    };
   },
 };
 
