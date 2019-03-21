@@ -1,48 +1,45 @@
 <template>
-  <highcharts :options="options" ref="histogram-chart" class="histogram"></highcharts>
+  <highcharts :options="options" ref="bell-curve" class="line"></highcharts>
 </template>
 
 <script>
 import HighchartsVue from 'highcharts-vue';
-import loadHistogram from 'highcharts/modules/histogram-bellcurve';
+// import Histogram from 'highcharts-histogram-bellcurve';
 import Highcharts from 'highcharts';
 
-loadHistogram(Highcharts);
+
 
 const data = {
   title: {
-    text: 'Starting Salary of Graduates',
+    text: 'Bell curve',
   },
-  xAxis: {
+  xAxis: [{
     title: {
-      text: 'Histogram',
+      text: 'Data',
     },
-  },
-
+    alignTicks: false,
+  }, {
+    title: {
+      text: 'Bell curve',
+    },
+    alignTicks: false,
+    opposite: true,
+  }],
 
   yAxis: [{
     title: { text: 'Data' },
   }, {
-    title: { text: 'Histogram' },
+    title: { text: 'Bell curve' },
     opposite: true,
   }],
 
-  plotOptions: {
-    histogram: {
-      color: '#6495ED',
-      // binWidth: 0.1,
-      baseSeries: 's1',
-
-    },
-  },
-
   series: [{
-    type: 'histogram',
-    name: 'Starting Salary',
-    id: 's1',
-    data: [4400, 4400, 4400, 4500, 4700, 4300, 4400, 4500, 4500, 4500, 4100, 4100, 4200, 4500, 4500,
-      4099, 4000, 4000, 4100, 5100, 5000, 5070, 5500, 5000, 5000, 5200, 5300, 4800, 4500, 4500,
-      4200, 4400, 4500, 4500, 4700, 4900, 4700, 4600, 4500, 4500, 4400, 4400, 4005, 4500, 4600],
+    type: 'bellcurve',
+    xAxis: 1,
+    yAxis: 1,
+    baseSeries: 1,
+  }, {
+    data: [3.5, 3, 3.2, 3.1, 3.6, 3.9, 3.4],
   }],
 
 
@@ -65,6 +62,6 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 60%;
 }
 </style>
