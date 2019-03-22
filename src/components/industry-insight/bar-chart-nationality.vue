@@ -4,24 +4,23 @@
 
 <script>
 import HighchartsVue from 'highcharts-vue';
-// import Highcharts from 'highcharts';
 
 const data = {
   chart: {
-    type: 'bar',
+    type: 'column',
   },
   title: {
-    text: 'RA Acceptance Rate by Major',
+    text: 'Nationality',
   },
   subtitle: {
-    text: 'in the past 5 years',
+    text: 'Source: NUS datalake',
   },
   xAxis: {
     type: 'category',
     labels: {
       rotation: -45,
       style: {
-        fontSize: '13px',
+        fontSize: '10px',
         fontFamily: 'Verdana, sans-serif',
       },
     },
@@ -29,14 +28,14 @@ const data = {
   yAxis: {
     min: 0,
     title: {
-      text: 'Acceptance Rate',
+      text: 'Number of people',
     },
   },
   legend: {
     enabled: false,
   },
   tooltip: {
-    pointFormat: 'Number of people: <b>{point.y:.1f} </b>',
+    pointFormat: 'Number of people: <b>{point.y:.0f} </b>',
   },
   plotOptions: {
     column: {
@@ -46,27 +45,22 @@ const data = {
     },
   },
   series: [{
-    name: 'Population',
+    name: 'Nationality',
     data: [
-      ['LS', 0.5],
-      ['CS', 0.45],
-      ['CEG', 0.38],
-      ['MS', 0.38],
-      ['PS', 0.2],
-      ['EC', 0.19],
-      ['CE', 0.1],
-      ['IS', 0.4],
-      ['BA', 0.5],
+      ['Singapore', 40],
+      ['China', 15],
+      ['Malaysia', 5],
+      ['Others', 7],
     ],
     dataLabels: {
       enabled: true,
       rotation: -90,
       color: '#000080',
       align: 'right',
-      format: '{point.y}', // one decimal
+      format: '{point.y:.0f}', // one decimal
       y: 10, // 10 pixels down from the top
       style: {
-        fontSize: '10px',
+        fontSize: '13px',
         fontFamily: 'Verdana, sans-serif',
       },
     },
@@ -90,5 +84,6 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 </style>

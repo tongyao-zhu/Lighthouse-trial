@@ -1,12 +1,13 @@
 import About from '@/components/about/about';
 import Contact from '@/components/contact/contact';
-import Chart from '@/components/ra-main-charts/ra-main-charts';
+import RAChart from '@/components/ra-main-charts/ra-main-charts';
 
 // import About from '@/components/about/about';
 // import Contact from '@/components/contact/contact';
 import Home from '@/components/home/home';
-// import Company from '@/components/company/company';
-// import Header from '@/components/header/header';
+import Company from '@/components/company/company';
+import Header from '@/components/header/header';
+import Subheader from '@/components/subheader/subheader';
 // import Pie from '@/components/charts/pie';
 import Lines from '@/components/charts/line';
 // import Bar from '@/components/charts/bar';
@@ -35,12 +36,22 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Chart,
+      component: null,
+    },
+    {
+      path: '/current-projects',
+      name: 'current-projects',
+      component: CurrentProjects,
     },
     {
       path: '/about',
       name: 'about',
-      component: TrejectoryPosition,
+      component: About,
+    },
+    {
+      path: '/ra-charts',
+      name: 'ra-charts',
+      component: RAChart,
     },
     {
       path: '/position-stats',
@@ -56,6 +67,11 @@ export default new Router({
       path: '/JobPostSearch',
       name: 'JobPostSearch',
       component: JobPostSearch,
+    },
+    {
+      path: '/trjectory',
+      name: 'trajectory',
+      component: TrejectoryPosition,
     },
     {
 
@@ -88,6 +104,11 @@ export default new Router({
       },
     },
     {
+      path: '/company-description',
+      name: 'company-description',
+      component: Company,
+    },
+    {
       path: '/searchBar',
       name: 'searchBar',
       component: SearchBar,
@@ -101,6 +122,22 @@ export default new Router({
       path: '/positionDetails',
       name: 'positionDetails',
       component: PositionDetails,
+    },
+    {
+      path: '/header',
+      name: 'header',
+      component: Header,
+      props: {
+        username: 'Anonymous',
+      },
+    },
+    {
+      path: '/subheader',
+      name: 'subheader',
+      component: Subheader,
+      props: {
+        field: 'Internship Opportunities',
+      },
     },
   ],
 });

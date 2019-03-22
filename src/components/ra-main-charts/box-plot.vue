@@ -26,7 +26,7 @@ const data = {
   },
 
   xAxis: {
-    categories: ['Life Sci', 'Com Sci', 'Civil Eng', 'Material Sci', 'Psychology', ' Economics', 'Chemical Eng', 'Info Systems', 'Biz Analytics'],
+    categories: ['Life Sci', 'Com Sci', 'Civil Eng', 'Material Sci', 'Psychology', 'Economics', 'Chemical Eng', 'Info Systems', 'Biz Analytics'],
     title: {
       text: 'Major',
     },
