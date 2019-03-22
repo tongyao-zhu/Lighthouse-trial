@@ -12,7 +12,6 @@ import router from './app/router/router';
 // import Highcharts from 'highcharts';
 import './styles/main.scss';
 
-
 exportingInit(Highcharts);
 
 Vue.config.productionTip = process.env.NODE_ENV === 'production';
